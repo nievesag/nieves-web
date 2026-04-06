@@ -13,6 +13,15 @@
   src: url('fnt/Inter-VariableFont_opsz,wght.ttf');
 }
 
+@font-face {
+  font-family: "Inter_SemiBold";
+  src: url('fnt/Inter_18pt-SemiBold.ttf');
+}
+@font-face {
+  font-family: "Inter_Medium";
+  src: url('fnt/Inter_18pt-Medium.ttf');
+}
+
 html {
   font-family: 'Inter';
   background-color: #171717;
@@ -55,6 +64,19 @@ body {
 .main{
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.about {
+  width: 1000px;
+  height: 512px;
+  background: rgb(113, 188, 32, 0.11);
+  margin: 0 auto;
+}
+
+.p {
+  color: rgba(245, 255, 250);
+  font-family: 'Inter_SemiBold';
+  font-weight: bold;
 }
 
 h1 {
