@@ -8,77 +8,174 @@
   src: url('fnt/DotGothic16-Regular.ttf');
 }
 
-html {
-  font-family: 'Lexend';
-  background-color: #e5e5f7;
-  opacity: 1;
-  background-image:  linear-gradient(#9fb4ff 1px, transparent 1px), linear-gradient(to right, #9fb4ff 1px, #e5e5f7 1px);
-  background-size: 20px 20px;
+@font-face {
+  font-family: "Inter";
+  src: url('fnt/Inter-VariableFont_opsz,wght.ttf');
 }
 
-.h1 {
-  color: rgb(202, 79, 85);
+html {
+  font-family: 'Inter';
+  background-color: #171717;
+  opacity: 1;
+}
+
+.h1imp {
+  font-family: "DotGothic16";
+  color: rgb(113, 188, 32);
+  font-size: 56px;
 }
 
 .h2 {
-  color: hsl(226, 57%, 54%);
+  font-family: "Inter";
+  color: rgb(113, 188, 32);
+  font-size: 1rem;
 }
 
-.h3 {
-  color: #9a78da;
+.top {
+  padding-left: 64px;
+  padding-right: 64px;
+  border-top: 24px;
+  border-bottom: 24px;
 }
 
-.center {
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.left {
-  align-items: left;
-  text-align: left;
-  align-content: left;
-  justify-content: left;
-}
-
-.center2 {
-  margin-left: 24.5%;
-  margin-top: 20px;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  background-color: #7f7de446;
-  width: 50%;
-}
-
-.peli {
-  height: 600px;
-  width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button1 {
-  margin: 15px;
-  background-color: hsl(226, 57%, 54%);
-  color: hsl(225, 44%, 82%);
-  border-radius: 3px;
-}
-
-.button2 {
-  margin: 15px;
-  background-color: rgb(154, 120, 218);
-  color: rgb(213, 201, 236);
-  border-radius: 3px;
-}
-
-
-* {
+/* Design */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+}
+
+body {
+  color: #272727;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "DotGothic16";
+  color: rgb(113, 188, 32);
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#171717;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 64px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #171717;
+  color: rgb(113, 188, 32);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #171717;
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: #17171761;
+  color: rgb(113, 188, 32);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: #171717;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left,  #171717 40%, rgb(59, 109, 6) 200%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
 }
 
 :root {
@@ -91,48 +188,10 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #000;
+  background-color:  #171717;
   margin: 0;
-  font-family: "DotGothic16";
   color: rgb(var(--t));
   position: relative;
-}
-
-h1,
-h2,
-h3,
-p {
-  font-weight: normal;
-}
-
-h1 {
-  font-size: 5rem;
-  margin: 0 0 3rem 0;
-  text-align: center;
-}
-
-p {
-  line-height: 200%;
-  margin-bottom: 3rem;
-}
-
-.scroll {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.2rem;
-  gap: 1rem;
-  position: fixed;
-  bottom: 3rem;
-  right: 3rem;
-  cursor: pointer;
-  transition: all ease 0.3s;
-}
-
-.text {
-  text-shadow: 0 0 20px 1px rgb(var(--c), 1);
-  color: rgb(var(--c));
-  font-family: "Lexend";
 }
 
 .container {
@@ -228,59 +287,6 @@ p {
   transition-delay: 0s;
 }
 
-/* extra */
-
-main {
-  border-style: solid;
-  border-color: rgb(var(--t), 0.2);
-  border-width: 0 1px 0 1px;
-  width: 60%;
-  height: auto;
-  margin: 0 15rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.line {
-  width: 100%;
-  height: 1px;
-  position: relative;
-  background-color: rgb(var(--t), 0.2);
-}
-
-.top {
-  top: 5rem;
-}
-
-.bottom {
-  bottom: 5rem;
-}
-
-article {
-  position: relative;
-  margin: 10rem 4rem;
-}
-
-a {
-  color: rgb(var(--c));
-  text-decoration: none;
-}
-
-@media screen and (max-width: 850px) {
-  main {
-    width: 100%;
-    margin: 0 5rem;
-  }
-  
-  .ruler {
-    left: 0rem !important;
-  }
-}
-
-
 .ruler {
   width: 2rem;
   height: 100%;
@@ -288,14 +294,13 @@ a {
   left: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .lines {
   width: 1px;
   height: 100%;
-  background-color: rgb(var(--c), 0.2);
+  background-color: rgb(113, 188, 32, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,36 +309,37 @@ a {
 
 .lines span {
   width: 1rem;
-  background-color: rgb(var(--c), 0.4);
+  background-color: rgb(113, 188, 32, 0.4);
   height: 1px;
   position: absolute;
 }
 
 .mask {
   position: fixed;
-  height: 10%;
+  height: 15%;
   width: 1rem;
-  background-color: #000;
+  background-color:  #171717;
   z-index: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  color: rgb(var(--c));
+  font-family: DotGothic16;
+  color: rgb(113, 188, 32);
 }
 
 .one {
   top: 0;
   border-width: 0 0 1px 0;
-  border-color: rgb(var(--c));
+  border-color: rgb(113, 188, 32);
   border-style: solid;
   
 }
 .two {
   bottom: 0;
   border-width: 1px 0 0px 0;
-  border-color: rgb(var(--c));
+  border-color: rgb(113, 188, 32);
   border-style: solid;
 }
 
@@ -436,4 +442,3 @@ a {
 .lines span:nth-child(25) {
   top: 100%;
 }
-
