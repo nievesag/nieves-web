@@ -168,7 +168,7 @@ img {
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .card_content {
@@ -358,11 +358,16 @@ body {
   border-style: solid;
   
 }
+
 .two {
   bottom: 0;
   border-width: 1px 0 0px 0;
   border-color: rgb(113, 188, 32);
   border-style: solid;
+}
+
+.navbar {
+  position: sticky;
 }
 
 .lines span:nth-child(1) {
