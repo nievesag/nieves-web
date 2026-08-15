@@ -470,3 +470,9 @@ body {
 .lines span:nth-child(25) {
   top: 100%;
 }
+
+@media (min-width:600px) {
+  .ruler {
+    margin-left: 0;
+  }
+}
