@@ -471,8 +471,8 @@ body {
   top: 100%;
 }
 
-@media (min-width:600px) {
+@media (max-width:600px) {
   .ruler {
-    margin-left: 0;
+    left: 3px;
   }
 }
