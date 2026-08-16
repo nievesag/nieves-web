@@ -66,6 +66,8 @@ body {
   margin: 0 auto;
 }
 
+}
+
 .about {
   width: 70vw;
   height: 30vh;
@@ -366,10 +368,10 @@ body {
   border-style: solid;
 }
 
-#navbar {
+.navbar {
     position: sticky;
     top: 0;
-    align-self: center;
+    width: 100%;
     height: auto;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -378,18 +380,21 @@ body {
     gap: 3vw;
     display: inline-flex;
     background-color: #171717;
+    z-index: 10;
 }
 
 .bar-element {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    color: var(--roto-cynthia);
+    color: rgb(113, 188, 32);
     font-size: 4vmin;
-    font-family: Cascadia Code;
-    font-style: italic;
-    font-weight: bold;
+    font-family: DotGothic16;
     word-wrap: break-word;
+}
+
+.bar-element a {
+    color: rgb(255, 128, 0);
 }
 
 .lines span:nth-child(1) {
@@ -495,5 +500,10 @@ body {
 @media (max-width:600px) {
   .ruler {
     left: 3px;
+  }
+
+  .cards {
+    margin-left: 15px;
+    padding: 20px;
   }
 }
